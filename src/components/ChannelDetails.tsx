@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Box } from "@mui/material";
-
-import { Videos, ChannelCard } from "./";
+import Videos from "./Videos";
+import ChannelCard from "./ChannelCard";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const ChannelDetail = ({ params: { id } }: { params: { id: string } }) => {

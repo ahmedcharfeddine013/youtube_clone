@@ -4,11 +4,12 @@ import ReactPlayer from "react-player";
 import { Typography, Box, Stack } from "@mui/material";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 
-import { Videos, Loader } from "./";
+import Videos from "./Videos";
+import Loader from "./Loader";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const VideoDetail = ({ params: { id } }: { params: { id: string } }) => {
-  const [videoDetail, setVideoDetail] = useState(null);
+  const [videoDetail, setVideoDetail] = useState<any>(null);
   const [videos, setVideos] = useState(null);
 
   useEffect(() => {
@@ -48,7 +49,7 @@ const VideoDetail = ({ params: { id } }: { params: { id: string } }) => {
               py={1}
               px={2}
             >
-              <Link to={`/channel/${channelId}`}>
+              <Link href={`/channel/${channelId}`}>
                 <Typography
                   variant={{ sm: "subtitle1", md: "h6" }}
                   color="#fff"
