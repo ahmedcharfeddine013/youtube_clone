@@ -15,12 +15,12 @@ import { ElementType } from "react";
 
 export const logo = "https://i.ibb.co/s9Qys2j/logo.png";
 
-export interface Category {
-  name: string;
-  icon: ElementType; // Specify icon type as ElementType
+export interface CategoryProps {
+  name: any;
+  icon: any; // Specify icon type as ElementType
 }
 
-export const categories: Category[] = [
+export const categories: CategoryProps[] = [
   { name: "New", icon: HomeIcon },
   { name: "JS Mastery", icon: CodeIcon },
   { name: "Coding", icon: CodeIcon },
