@@ -9,7 +9,7 @@ interface CategoriesProps {
   setSelectedCategory: any
 }
 
-const Categories: React.FC<CategoriesProps> = ({ selectedCategory, setSelectedCategory }) => (
+const SideBar: React.FC<CategoriesProps> = ({ selectedCategory, setSelectedCategory }) => (
   <Stack
     direction="row"
     sx={{
@@ -39,4 +39,4 @@ const Categories: React.FC<CategoriesProps> = ({ selectedCategory, setSelectedCa
   </Stack>
 );
 
-export default Categories;
+export default SideBar;
